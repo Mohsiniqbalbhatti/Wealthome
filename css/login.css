@@ -1,0 +1,103 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  scroll-behavior: smooth;
+}
+/* root  */
+:root {
+  --gradient: linear-gradient(270deg, #0f4392 0%, #001d3d 100%);
+}
+.clr-blue {
+  color: #0f4392;
+}
+/* whatsapp box  */
+.whatsappbox {
+  position: fixed;
+  z-index: 1500;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  color: #00a884;
+  font-size: 36px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  bottom: 3%;
+  right: 3%;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.258);
+}
+
+.whatsappbox:hover {
+  cursor: pointer;
+  background-color: #00a884;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+/* scroll bar  */
+/* Track */
+::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0f4392; /* Color of the scrollbar handle */
+  border-radius: 10px;
+}
+
+/* navbar */
+nav {
+  z-index: 100;
+  background-image: var(--gradient);
+}
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  box-shadow: none !important;
+}
+.nav-link {
+  color: rgb(255, 255, 255) !important;
+  font-size: 18px !important;
+}
+.nav-link:hover {
+  color: white;
+  font-weight: 400;
+  position: relative;
+  bottom: 3px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+/* login  */
+.form-box {
+  /* border: 1px solid #0f4392 !important; */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.272);
+  background: linear-gradient(270deg, #0f4392 0%, #001d3d 100%);
+}
+
+label {
+  color: white;
+  font-weight: bold;
+  padding-left: 5px;
+}
+.btn-primary {
+  font-weight: 500 !important;
+}
+.btn-primary:hover {
+  background-color: white !important;
+  color: #0b5ed7 !important;
+  transition: all 0.3s ease-in;
+}
+h4 {
+  margin-top: 10px !important;
+}
